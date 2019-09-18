@@ -1,0 +1,31 @@
+{
+  "name": "flow-adaptive",
+  "version": "1.0.0",
+  "description": "Adaptive typography for web apps",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SashaSansay/flow-adaptive.git"
+  },
+  "keywords": [
+    "js",
+    "rem",
+    "adaptive"
+  ],
+  "author": "SashaSansay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SashaSansay/flow-adaptive/issues"
+  },
+  "homepage": "https://github.com/SashaSansay/flow-adaptive#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  }
+}
