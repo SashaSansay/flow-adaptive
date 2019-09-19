@@ -1,6 +1,6 @@
 # flow-adaptive.js
 
-Make your web apps look awesome on any device.
+Make your web apps look awesome on any device with zero dependencies.
 
 No more headaches with adaptive sizes in pixels!
 
@@ -38,7 +38,7 @@ new FlowAdaptive({
 
 And then all you need is to set all sizes in rem units. For example: 
 
-```css
+```scss
 .foo {
   font-size: 1.6rem; // equal to 16px on 1440px, on 768px and on 375px screen width 
 }
