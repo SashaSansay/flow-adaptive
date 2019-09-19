@@ -4,6 +4,8 @@ Make your web apps look awesome on any device with zero dependencies.
 
 No more headaches with adaptive sizes in pixels!
 
+Also here is a [vue plugin](https://github.com/SashaSansay/flow-adaptive-vue).
+
 ## What is flow-adaptive.js about?
 
 It's about dynamic change of html element font-size for comfortable using of rem
