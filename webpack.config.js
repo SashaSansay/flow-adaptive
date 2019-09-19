@@ -1,28 +1,11 @@
 const path = require('path')
+const config = require('./webpack.config.module.js')
 
-module.exports = {
-  mode: 'production',
+module.exports = Object.assign({}, config, {
   entry: './src/index.js',
   output: {
     path: path.resolve('dist'),
-    filename: 'index.js',
-    libraryTarget: 'commonjs2',
+    filename: 'flow-adaptive.min.js',
+    libraryTarget: 'window',
   },
-  module: {
-    rules: [
-      {
-        test: /\.js?$/,
-        exclude: /(node_modules)/,
-        use: 'babel-loader',
-      },
-    ],
-  },
-  resolve: {
-    extensions: ['.js'],
-  },
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 9000,
-  },
-}
+})

@@ -2,9 +2,9 @@
   "name": "flow-adaptive",
   "version": "1.0.0",
   "description": "Adaptive typography for web apps",
-  "main": "dist/index.js",
+  "main": "dist/index.module.js",
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "webpack --mode production && webpack --mode production --config webpack.config.module.js",
     "dev": "webpack-dev-server"
   },
   "repository": {
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/SashaSansay/flow-adaptive#readme",
   "devDependencies": {
     "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
     "babel-loader": "^8.0.6",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9"
