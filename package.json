@@ -2,7 +2,7 @@
   "name": "flow-adaptive",
   "version": "1.1.1",
   "description": "Adaptive typography for web apps",
-  "main": "dist/index.module.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "webpack --mode production && webpack --mode production --config webpack.config.module.js",
     "dev": "webpack-dev-server"
