@@ -49,9 +49,9 @@ class FlowAdaptive {
 
     const resMaxFont = (maxFont || defaultSettings.maxFont)
     const resMinFont = (minFont || defaultSettings.minFont)
-    const resFrontRatio = (fontRatio || defaultSettings.fontRatio)
+    const resFontRatio = (fontRatio || defaultSettings.fontRatio)
 
-    const fontBase = width / resFrontRatio
+    const fontBase = width / (typeof resFontRatio === 'function' ? resFontRatio() : resFontRatio)
     // eslint-disable-next-line no-nested-ternary
     const fontSize = fontBase > resMaxFont
       ? resMaxFont
