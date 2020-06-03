@@ -46,6 +46,21 @@ And then all you need is to set all sizes in rem units. For example:
 }
 ```
 
+`fontRatio` can be either a number or a function callback. e.g: 
+
+```javascript
+new FlowAdaptive({
+  fontRatio: 1440 / 10,
+  ...
+})
+```
+
+```javascript
+new FlowAdaptive({
+  fontRatio : () => 1440/10 * ((800/1440) / (window.innerHeight/window.innerWidth)),
+})
+```
+
 Or you can use it without modules
 
 ```html
