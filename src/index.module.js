@@ -21,7 +21,7 @@ class FlowAdaptive {
 
   handleResize() {
     const { settings, defaultSettings, settings: { breakPoints } } = this
-    const elw = window.innerWidth
+    const elw = document.body.clientWidth
 
     // eslint-disable-next-line max-len, arrow-body-style
     const currentBreakPoint = breakPoints.find((breakPoint) => {
